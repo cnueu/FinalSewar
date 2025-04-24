@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:sewar/companyscreens/Companydata.dart';
+import 'package:sewar/userscreens/aimodels.dart';
 import 'package:sewar/userscreens/homepage.dart';
+import 'package:sewar/userscreens/matchesschedule.dart';
+import 'package:sewar/userscreens/userprofilepage.dart';
 import '/welcome_screen.dart';
 import 'package:provider/provider.dart';
 import 'theme/themeprovider.dart';
@@ -34,7 +38,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/welcome',
       routes: {
-        '/welcome': (context) => WelcomeScreen(),
+        '/welcome': (context) =>  DataScreen(isDark: isDark,),
       },
     );
   }

@@ -8,6 +8,7 @@ import 'package:sewar/userscreens/userprofilepage.dart';
 import 'package:sewar/userscreens/matchpage.dart';
 import 'package:sewar/userscreens/homepage.dart';
 import 'package:sewar/userscreens/insidchat.dart';
+import 'package:sewar/companyscreens/Companydata.dart';
 
 class CompanyChatsScreen extends StatelessWidget {
   final bool isDark;
@@ -291,7 +292,7 @@ class CompanyChatsScreen extends StatelessWidget {
                                 MaterialPageRoute(
                                   builder:
                                       (context) =>
-                                          CompanyProfile(isDark: isDark),
+                                          DataScreen(isDark: isDark),
                                 ),
                               );
                             },

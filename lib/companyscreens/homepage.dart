@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'package:flutter/material.dart';
+import 'package:sewar/companyscreens/Companydata.dart';
 import 'package:sewar/companyscreens/aimodels.dart';
 import 'package:sewar/companyscreens/companyprofilepage.dart';
 import 'package:sewar/companyscreens/matchesschedule.dart';
@@ -266,7 +267,7 @@ class _CompanyHomeScreenState extends State<CompanyHomeScreen> {
                                   'assets/company/icons/unsellectedaipageicon.png',
                                   width: 26,
                                   height: 26,
-                                  color: AppStyles.icongray,
+                                  
                                 ),
                               ),
                               GestureDetector(
@@ -276,7 +277,7 @@ class _CompanyHomeScreenState extends State<CompanyHomeScreen> {
                                     MaterialPageRoute(
                                       builder:
                                           (context) =>
-                                              CompanyProfile(isDark: isDark),
+                                              DataScreen(isDark: isDark), 
                                     ),
                                   );
                                 },

@@ -15,6 +15,7 @@ import 'package:sewar/userscreens/matchpage.dart';
 import 'package:sewar/userscreens/userprofilepage.dart';
 import 'package:sewar/userscreens/homepage.dart';
 import 'package:sewar/userscreens/watchmatchpage.dart';
+import 'package:sewar/companyscreens/Companydata.dart';
 
 class CoMatchesScheduleScreen extends StatelessWidget {
   final bool isDark;
@@ -251,7 +252,7 @@ class CoMatchesScheduleScreen extends StatelessWidget {
                                 MaterialPageRoute(
                                   builder:
                                       (context) =>
-                                          CompanyProfile(isDark: isDark),
+                                          DataScreen(isDark: isDark),
                                 ),
                               );
                             },

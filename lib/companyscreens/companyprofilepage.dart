@@ -15,6 +15,7 @@ import 'package:blur/blur.dart';
 import 'package:sewar/theme/app_styles.dart';
 import 'package:sewar/theme/themeprovider.dart';
 import 'package:provider/provider.dart';
+import 'package:sewar/companyscreens/Companydata.dart'; 
 
 class CompanyProfile extends StatefulWidget {
   final bool isDark;
@@ -361,7 +362,7 @@ class _CompanyProfileState extends State<CompanyProfile> {
                                 MaterialPageRoute(
                                   builder:
                                       (context) =>
-                                          CompanyProfile(isDark: isDark),
+                                          DataScreen(isDark: isDark),
                                 ),
                               );
                             },
